@@ -14,10 +14,10 @@
 */
 body {
     /*duong dan den hinh anh duoc chon lam nen*/
-    background: url(12.png);
+    background: url(https://c.tadst.com/gfx/tzmap/worldclockcities.png?8507);
     /* Mục đích: Căn chỉnh vị trí của hình nền trong phần tử.
 center center: Đặt tâm của hình ảnh ở trung tâm cả theo chiều ngang và chiều dọc. */
-    background-position: center top;
+    background-position: center center;
     /*hinh nên chi xuat hien 1 lan, ko lap lai theo chieu nao caca*/
     background-repeat: no-repeat;
     /*hinh nen bao phu toan bo page, anh ko bi meo*/
