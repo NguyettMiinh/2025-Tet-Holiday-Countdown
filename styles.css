@@ -1,0 +1,81 @@
+/* 1. Importing Fonts 
+    Barlow Condensed, Barlow Semi Condensed, and Nunito Sans.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&family=Nunito+Sans:wght@300;600;800&display=swap");
+
+/* 2. Global Styles: dong bo cho toan page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*3. Body Styles:
+  ap dung hinh nen cho ca pagepage
+*/
+body {
+    /*duong dan den hinh anh duoc chon lam nen*/
+    background: url(12.png);
+    /* Mục đích: Căn chỉnh vị trí của hình nền trong phần tử.
+center center: Đặt tâm của hình ảnh ở trung tâm cả theo chiều ngang và chiều dọc. */
+    background-position: center top;
+    /*hinh nên chi xuat hien 1 lan, ko lap lai theo chieu nao caca*/
+    background-repeat: no-repeat;
+    /*hinh nen bao phu toan bo page, anh ko bi meo*/
+    background-size: cover;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+}
+.heading {
+    /*van ban duoc can giua*/
+    text-align: center;
+    color: rgb(103, 4, 4);
+    padding: 15px;
+    font-size: 2rem;
+
+}
+
+.container {
+    /*tao bo cuc dang luoi
+        moi phan tu con 1 o, de chinh sua
+    */
+    display: grid;
+    /*them bong*/
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    /*xac dinh so luong va kich thuoc cua cac cot dang luoi*/
+    /*chia thanh 4 cot bang nahu*/
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    /*chiem 70% so voi do dai cua page, vi container ban dau se rong bang do dai cua page%*/
+    width: 70%;
+    /*tu dong tinh toan lề trái, phải sao cho phần tử đc căn giữa trong phần tử cha, chính xác là giữa page*/
+    margin: auto;
+    padding: 20px 0px;
+    margin-top: 20px;
+
+}
+
+.box-time h2 {
+    font-size: 2.5rem;
+}
+
+.box-time p {
+    font-family: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ap dung cho manh hinh nho hoac bang 600px */
+@media screen and (max-width:600px) {
+    .container{
+    /* khi man hinh nho hon 600 thi se co 2 cot bang nhau */
+        grid-template-columns: repeat(2,1fr);
+    /*va 2 hang bang nhau*/
+        grid-template-rows: repeat(2,1fr);
+    }
+    /*lề dưới của hàng 1 = 40px*/
+    .box-time p{
+        margin-bottom: 40px;
+    }
+}
